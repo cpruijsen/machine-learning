@@ -15962,6 +15962,8 @@ JEmSJEkD48UpSZIkSZIkDcz/AB+OR3PsZX9zAAAAAElFTkSuQmCC
 <p>We then have two cases in the middle. From results we can see the max_depth = 3 case is best, as the training and test curves converge and for models where they converge, the line is highest. We're looking at ~80% accuracy.</p>
 <p>As for the training points - choosing the max_depth = 1 example - the curves are both converging to 0.5 approx.
 Adding more training points would not benefit the model, as you can see the curves are pretty much converged already at the 200 training points stage. This is also true for the testing curve. The reason for this, in this case, is the large bias in the model. If you look at the max_depth = 3 example the curves don't converge fully until approx. 300 training points.</p>
+<p>Q: Therefore lastly for this section please also describe the initial trends of the training and testing curves before they converge. Increasing or decreasing? As this will help you understand how the increase of data affects models.</p>
+<p>You see a rapidly increasing variance and bias, until the ~200 training points point has been reached (in max_depth = 1), when the lines are more or less converged and the accuracy doesn't change much further.</p>
 
 </div>
 </div>
